@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace : Mapper 인터페이스의 패키지명 + 클래스명 => Mapper XML과 인터페이스 자동 매핑 가능 -->
+<mapper namespace="com.mycomp.exboard.service.BookMapper">
+    
+    <!-- 책 목록 조회 -->
+    <select id="selectBook" resultType="com.mycomp.exboard.entity.Book">
+        SELECT * FROM book
+    </select>
+    
+</mapper>
