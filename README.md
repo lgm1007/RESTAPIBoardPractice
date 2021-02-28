@@ -1,4 +1,4 @@
-## Spring Boot + MySQL (MyBatis) Project (+ Docker)
+# Spring Boot + MySQL (MyBatis) Project (+ Docker)
 
 #### Spring Boot REST API & Docker 실습해보기
 
@@ -40,7 +40,7 @@ application.properties 파일에 server.port 또는 datasource 정보들을 입�
 
 ```properties
 spring.datasource.hikari.driver-class-name=com.mysql.cj.jdbc.Driver
-spring.datasource.hikari.jdbc-url=jdbc:mysql://127.0.0.1:3306/DB(스키마)이름?useSSH=false
+spring.datasource.hikari.jdbc-url=jdbc:mysql://127.0.0.1:3306/DB(스키마)이름?useSSH=false&serverTimezone=UTC&useLegacyDatetimeCode=false
 spring.datasource.hikari.username=유저이름
 spring.datasource.hikari.password=비밀번호
 ```
