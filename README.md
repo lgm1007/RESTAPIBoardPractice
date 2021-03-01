@@ -79,3 +79,19 @@ application.properties에서 DataSource 접속 정보를 읽어와 SqlSessionFac
 
 [![](https://img.shields.io/badge/class-DataSourceConfig-blue)](https://github.com/lgm1007/RESTAPIBoardPractice/blob/master/src/main/java/com/mycomp/exboard/config/DataSourceConfig.java)
 
+<br/>
+
+## 8. Docker 배포하기
+
+##### 1) jar 파일 준비
+
+pom.xml 세팅 (packaging 태그 값 jar & spring-boot-starter-tomcat 의존성 추가)
+
+[![](https://img.shields.io/badge/xml-pom-blueviolet)](https://github.com/lgm1007/RESTAPIBoardPractice/blob/master/pom.xml)
+
+이클립스 IDE 사용 시 프로젝트 우클릭 > Run As > Maven build > Goals에 package, Profiles는 값 지우기 > Run
+
+그러면 프로젝트 내 target 폴더 내 jar 파일 생성
+
+![](https://i.imgur.com/2ARVnEs.png)
+
